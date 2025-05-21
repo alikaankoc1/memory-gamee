@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hafıza Kart Eşleştirme Oyunu</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="login-screen" class="centered-screen">
+        <h1>🧠 Hafıza Kart Eşleştirme Oyunu</h1>
+        <h2>Kullanıcı Adı Giriniz</h2>
+        <input type="text" id="player-name" placeholder="Adınızı yazın..." />
+        <button id="start-btn">Oyunu Başlat</button>
+    </div>
+
+    <div id="game-screen" class="hidden">
+        <h1>🧠 Hafıza Kart Eşleştirme Oyunu</h1>
+        <p id="welcome-msg"></p>
+        <div class="scoreboard">
+            <span>Skor: <span id="score">0</span></span>
+        </div>
+        <div class="game-container" id="game-board"></div>
+        <p id="status">Eşleşmeleri bul!</p>
+    </div>
+
+    <div id="congrats-screen" class="hidden centered-screen">
+        <h2>🎉 Tebrikler, <span id="winner-name"></span>! Tüm kartları eşleştirdiniz! 🎉</h2>
+        <button id="restart-btn">Tekrar Oyna</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
